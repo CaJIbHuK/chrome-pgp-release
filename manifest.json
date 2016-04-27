@@ -1,0 +1,57 @@
+{
+  "manifest_version": 2,
+
+  "name": "Everyone's Privacy",
+  "description": "Extension for easy encrypting messages using OpenPGP.js",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "images/icon_48_3.png",
+    "default_popup": "popup.html",
+    "default_title": "Everyone's Privacy"
+  },
+
+  "permissions": [
+    "clipboardRead",
+    "clipboardWrite",
+    "contextMenus",
+    "storage",
+    "tabs",
+    "activeTab", "http://*/",
+    "https://*/"
+  ],
+
+  "icons": {
+    "16": "images/icon_16_3.png",
+    "48": "images/icon_48_3.png",
+    "128": "images/icon_128_3.png"
+  },
+
+  "background": {
+    "scripts": ["js/openpgp.min.js",
+      "js/openpgp.worker.min.js", "js/background.js"
+    ]
+  },
+
+  "content_scripts": [{
+    "all_frames": true,
+    "matches": ["<all_urls>"],
+    "js": ["js/jquery-2.2.2.min.js",
+      "js/selection.js"
+    ],
+    "css": ["css/dialog.css"],
+    "run_at": "document_idle"
+  }],
+
+  "sandbox": {
+    "pages": ["options.html"]
+  },
+
+  "web_accessible_resources": [
+    "modal.html",
+    "js/modal.js",
+    "css/dialog.css"
+  ],
+
+  "options_page": "options.html"
+}

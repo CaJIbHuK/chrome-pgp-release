@@ -1,0 +1,168 @@
+
+#clear_keys.clear_key_round{
+	border-bottom-right-radius:3px;
+	border-top-right-radius:3px;
+}
+
+.form-popup {
+		margin-right: 10px;
+		margin-left: 10px;
+}
+
+.form-group.form-popup{
+	width: 250px;
+}
+.table {
+  table-layout:fixed;
+}
+
+.container-drag{
+	border: black;
+border-width: 5px;
+padding: 0;
+margin-top: 3%;
+height: 90%;
+width: 60%;
+border-color: white;
+border-style: dashed;
+margin-bottom: 5%;
+color: white;
+font-size: xx-large;
+font-family: inherit;
+text-align: -webkit-center;
+line-height: 18em;
+margin-left: 25%;
+}
+
+.check-box{
+	width: 5%;
+}
+
+#th_check{
+	width: 5%;
+}
+
+#save{
+	border-bottom-right-radius:5px;
+	border-top-right-radius:5px;
+}
+
+.grey{
+	color:#CECECE;
+}
+
+.input-group.input-group-unstyled{
+	width: 100%;
+}
+.input-group.input-group-unstyled input.form-control {
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+}
+.input-group-unstyled .input-group-addon {
+    border-radius: 4px;
+    border: 0px;
+    background-color: transparent;
+    padding: 0;
+    padding-left: 10px;
+}
+.label-modal{
+	padding: 0px;
+	margin: 0px;
+}
+
+.dropdown-search-ul{
+	padding-left: 0;
+	width: 100%
+}
+
+.dropdown-menu>li>a {
+	    padding: 3px 10px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.dropdown-search {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.label-modal-email{
+	margin-bottom: 5px;
+}
+
+#edit_field{
+	width: 100%;
+	resize: vertical;
+}
+
+.table td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+	#loader{
+		height: 30px;
+		width: 30px;
+	}
+
+	.btn-gen {
+		width: 25%;
+	}
+
+	.form-horizontal .control-label{
+		text-align: left;
+	}
+
+	.gen-key-text{
+		resize: vertical;
+	}
+
+	.settings-container {
+		margin-left: 30px;
+	}
+
+	.enc-type{
+		margin-left: 20px;
+	}
+
+	ul {
+		list-style-type: none;
+	}
+
+	#key{
+		width: 99%;
+	}
+
+	#result{
+		width: 200px;
+		padding-bottom: 10px;
+		resize: vertical;
+	}
+
+	#encrypt{
+		margin-bottom: 10px;
+	}
+
+	#decrypt{
+		margin-bottom: 10px;
+	}
+
+	.btn-popup{
+		width: 50%;
+	}
+
+	.options_header{
+		font-size: 25px;
+	}
+
+	.nav{
+		font-size: 20px;
+	}
+
+	#HKP_SRV{
+		width: 50%;
+	}

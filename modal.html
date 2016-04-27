@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/dialog.css"/>
+</head>
+<body>
+  <!-- Modal content -->
+  <div class="modal-content-pgp">
+  <h4 class="modal-title-pgp" id="passphrase_label">Enter passphrase:</h4>
+  <h5 class="modal-title-pgp" id="passphrase_label_help">(key to unlock private key)</h5>
+  <input type="password" class="form-control-pgp" id="passphrase"></input>
+  <h5 id="passphrase_label_error" hidden = true >wrong passphrase!</h5>
+  <div><button type="button" class="btn-pgp btn-default-pgp" id="passphrase_cancel" data-dismiss="modal">Cancel</button>
+  <button type="button" class="btn-pgp btn-success-pgp" id="passphrase_ok">OK</button></div>
+  <div id="selection_container"></div>
+  </div>
+
+  <script type="text/javascript" src="js/jquery-2.2.2.min.js"> </script>
+  <script type="text/javascript" src="js/modal.js"></script>
+</body>
+</html>

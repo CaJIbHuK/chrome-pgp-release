@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+
+<div class="form-group form-popup" id="form_pgp">
+  	<label for="subject">Subject:</label>
+  	<div class="input-group input-group-unstyled">
+  		<input type="text" class="form-control dropdown-toggle" data-toggle="dropdown" id="subject" placeholder="start enter name or email">
+  		<span class="input-group-addon hidden"  id="glyph_remove">
+  			<i class="glyphicon glyphicon-remove"></i>
+  		</span>
+   </div>
+     		<div class="dropdown">
+    		<ul class="dropdown-menu dropdown-search-ul" data-toggle="dropdown" id="search_dropdown"></ul>
+    	</div>
+</div>
+
+
+<script type="text/javascript" src="js/jquery-2.2.2.min.js"> </script>
+<script type="text/javascript" src="js/openpgp.min.js"> </script>
+<script type="text/javascript" src="js/openpgp.worker.min.js"> </script>
+<script type="text/javascript" src="js/popup.js"> </script>
+
+</body>
+</html>

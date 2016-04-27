@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+
+<div class="modal fade" tabindex="-1" id="modal_drag">
+  <div class="container-drag" id="dropzone">Drop your files here</div>
+</div>
+
+<div class="row">
+<div class="col-md-12">
+	<div class="panel panel-primary">
+	<div class="panel-heading options_header">Options</div>
+	</div>
+	</div>
+</div>
+
+<div class="modal fade" tabindex="-1" id="edit_modal" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Public key</h4>
+      </div>
+      <div class="modal-body">
+        <span class="close" id="close_span">x</span>
+        <h3 class="label-modal" id="edit_name"></h3>
+        <h3 class="label-modal label-modal-email"><small id="edit_email"></small></h3>
+        <textarea rows="10" id="edit_field" readonly></textarea>
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="delete_pk" class="btn btn-danger">Delete</button>
+        <button type="button" id="download_pk" class="btn btn-success">Download</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+<div class="col-md-3" id="menu">
+  <ul class="nav nav-pills nav-stacked">
+    <li class="active" id="main_opt" name="Main settings"><a href="#main">Main</a></li>
+    <li id="keys_opt" name="My keys"><a href="#keys">My keys</a></li>
+    <li id="gen_opt" name="Key generation"><a href="#keygen">Key generation</a></li>
+    <li id="about_opt" name="About"><a href="#about" >About</a></li>
+  </ul>
+</div>
+
+<div class="col-md-8" id="main_settings">
+	<script id="template" type="text/x-handlebars-template">
+      <div id="current-settings">
+    	<div class="panel panel-primary">
+      		<div class="panel-body">
+      		<h2>{{title}}</h2>
+      		<hr>
+	  		<div class="settings-container">
+        <form class="form-horizontal" role="form">
+	  			{{#each settings}}
+
+          {{#if this.title}}
+				<label>{{this.title}}:</label>
+        {{/if}}
+				{{{this.content}}}
+	  			{{/each}}
+        </form>
+	  		</div>
+	  		</div>
+      	</div>
+      </div>
+   </script>
+</div>
+</div>
+
+<script type="text/javascript" src="js/jquery-2.2.2.min.js"> </script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/openpgp.min.js"> </script>
+<script type="text/javascript" src="js/openpgp.worker.min.js"> </script>
+<script type="text/javascript" src="js/options.js"> </script>
+<script type="text/javascript" src="js/handlebars-v4.0.5.js"></script>
+<script type="text/javascript" src="js/saver.js"></script>
+
+</body>
+</html>
